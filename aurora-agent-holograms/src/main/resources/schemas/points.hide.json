@@ -1,0 +1,9 @@
+{
+    "schema": {
+        "description": "Hides admin point holograms",
+        "type": "object",
+        "required": [
+        ]
+    },
+    "uiSchema": {}
+}

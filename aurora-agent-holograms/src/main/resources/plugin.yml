@@ -1,0 +1,14 @@
+name: HolographicDisplaysAgent
+version: '${version}'
+main: net.kevinfitzgerald.aurora.plugins.HolographicDisplaysAgentPlugin
+api-version: 1.16
+prefix: Aurora_Holograms
+authors: [ Kevin Fitzgerald ]
+description: Aurora plugin for managing holographic displays
+website: https://github.com/kfitzgerald/aurora-agent-holograms
+depend: [aurora_core]
+commands:
+    ahd:
+        description: Aurora HD Agent Debugging
+        usage: "§cUsage: /<command> show | hide"
+#TODO: remove command

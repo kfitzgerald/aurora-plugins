@@ -1,0 +1,4 @@
+[submodule "aurora"]
+	path = aurora
+	url = https://github.com/murl-digital/aurora.git
+	branch = rewrite

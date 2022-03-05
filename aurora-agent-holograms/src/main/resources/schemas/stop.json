@@ -1,0 +1,18 @@
+{
+    "schema": {
+        "title": "Hologram",
+        "description": "Hides a hologram in the world",
+        "type": "object",
+        "required": [
+            "id"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "title": "Hologram Id",
+                "default": ""
+            }
+        }
+    },
+    "uiSchema": {}
+}

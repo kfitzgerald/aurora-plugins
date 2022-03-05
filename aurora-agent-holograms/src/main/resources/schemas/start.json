@@ -1,0 +1,66 @@
+{
+    "schema": {
+        "title": "Hologram",
+        "description": "Creates or shows a hologram in the world",
+        "type": "object",
+        "required": [
+            "lines",
+            "point"
+        ],
+        "properties": {
+            "id": {
+                "type": "string",
+                "title": "Hologram Id",
+                "default": ""
+            },
+            "permission": {
+                "type": "string",
+                "title": "Permission",
+                "description": "Permission required to view hologram"
+            },
+            "point": {
+                "type": "int",
+                "title": "Permission",
+                "description": "Permission required to view hologram"
+            },
+            "lines": {
+                "type": "array",
+                "items": {
+                    "oneOf": [
+                        {
+                            "title": "Text Line",
+                            "type": "string"
+                        },
+                        {
+                            "title": "ItemStack Line",
+                            "description": "Serialized ItemStack JSON blob",
+                            "type": "object",
+                            "additionalProperties": {
+                                "oneOf": [
+                                    {
+                                        "type": "string"
+                                    },
+                                    {
+                                        "type": "number"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "uiSchema": {},
+    "examples": [
+        {
+            "id": "h1",
+            "permission": null,
+            "point": 0,
+            "lines": [
+                "&6YOOOOOO",
+                "&lThis&r is {rainbow}COOL"
+            ]
+        }
+    ]
+}

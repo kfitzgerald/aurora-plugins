@@ -1,0 +1,11 @@
+{
+    "schema": {
+        "title": "Hologram",
+        "description": "Deletes all holograms in the world",
+        "type": "object",
+        "properties": {
+
+        }
+    },
+    "uiSchema": {}
+}
